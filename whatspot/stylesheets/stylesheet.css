@@ -1,0 +1,719 @@
+/* Body Style */
+
+/* Set font for whole document*/
+
+body {
+
+  	font-family: Arial;
+  	
+}
+
+#wrapper {
+
+	background-image: url(../imgs/subtle_dots2.png);
+	background-repeat: repeat;
+}
+
+/* reset margin and padding from broswer defaults*/
+
+div {
+	margin: 0;
+	padding: 0;
+}
+
+/*For all text areas - review page only though*/
+
+textarea {
+
+	margin-left: 2px;
+	resize: none;
+}
+
+/* Define base styling for all tables in the site - tables are consistently displayed in the same manner everytime*/
+
+table {
+
+	width: 100%;
+	border-spacing: 0;
+	border: 1px solid;
+	border-radius: 3px;
+}
+
+th {
+
+	border-bottom: 1px solid;
+	text-align: left;
+}
+
+/* Styling to give contrast to alternating able rows (every table) */
+
+tr:nth-child(even) {
+
+	background: #FFF;
+
+}
+
+tr:nth-child(odd) {
+	background: #DDD;
+}
+
+
+
+/* Header Styling*/
+
+#header {
+
+	height: 90px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #4CAF50;
+
+}
+
+/* position logo*/
+
+#logo img {
+
+	margin-top: 10px;
+	margin-left: 20%;
+
+}
+
+/* Position welcome text in header when a user is logged in*/
+
+#welcome {
+
+	color: #FFF;
+	font-size: 18px;
+	font-weight: bold;
+	position: absolute;
+	top: 56px;
+	left: 67%;
+}
+
+/* Navbar Styling*/
+
+#nav {
+	width: 100%;  
+	margin: 0 0 0 0;
+	padding: 0;
+	background-color: #F2F2F2;
+	border: 1px solid #CCC;  
+	list-style: none;
+	text-align: center;
+}
+
+#nav ul {
+
+	margin: 2px auto;
+	padding: 0; 
+}
+
+#nav li {
+
+	display: inline-block;
+
+}
+
+#nav li a {
+
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #069;
+	border-right: 1px solid #ccc; 
+}
+
+/* remove end borders for seamless transition into navbar */
+
+#nav li:first-child a {
+
+	border-left: none; 
+}
+
+#nav li:last-child a {
+
+	border-right: none; 
+}
+
+#nav li a:hover {
+
+	color: #c00;
+	background-color: #fff;
+}
+
+/* Main div styles - this holds the individual page's content*/
+
+#main {
+
+	width: 1024px;
+	min-height: 800px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+
+
+/* Footer CSS Styling*/
+
+#footer {
+
+   width:100%;
+   height:60px;   
+   background:#f2f2f2;
+   text-align: center;
+
+}
+
+#footer ul {
+
+	text-align: center;
+	margin: 0;
+
+}
+
+#footer li {
+
+	display: inline-block;
+	margin: 0;
+
+}
+
+#footer li a {
+
+	display: block;
+	text-decoration: none;
+	border-right: 1px solid #ccc; 
+}
+
+#footer p {
+
+	font-size: 9px;
+	color: #555;
+
+}
+
+
+/*Home Page Styling*/
+
+/* each header title should be underlined */
+
+.homeSection h1 {
+
+	color: #555;
+	font-size: 28px;
+	border-bottom: 1px solid #555;
+	margin-bottom: 30px;
+	margin-top: 50px;
+
+}
+
+/* indent content of this section for easy readability */
+
+.homeSection p, ul {
+
+	color: #555;
+	margin-left: 15px;
+
+}
+
+/* move mozilla img to right and float it allowing text to the left to be on the same row */
+
+.homeSection img {
+
+	float: right;
+
+}
+
+.searchLabel {
+
+	font-weight: bold;
+
+}
+
+#searchfield {
+	width: 960px;
+}
+
+/* Class Styles */
+
+/* the folllowing classes individualise each form as per requirements of the forms function - i.e. login box is a bit smaller*/
+
+.itemData {
+
+	color: #555;
+	float: left;
+	font-size: 24px;
+	border: 1px solid;
+	border-radius: 5px;
+	height: 400px;
+	margin-top: 10px;
+	padding-left: 20px;
+	width: 599px;
+
+}
+
+.userData {
+
+	color: #555;
+	float: left;
+	font-size: 24px;
+	border: 1px solid;
+	border-radius: 5px;
+	height: 400px;
+	margin-top: 10px;
+	padding-left: 20px;
+	width: 599px;
+
+}
+
+.reviewData {
+
+	color: #555;
+	float: left;
+	font-size: 22px;
+	border: 1px solid;
+	border-radius: 5px;
+	min-height: 400px;
+	margin-top: 10px;
+	padding-left: 20px;
+	width: 1000px
+
+}
+
+.reviewDataText {
+
+	font-size: 16px;
+	float: left;
+	padding: 20px;
+
+}
+
+/* some styles to colour, size and position certain small buts of text (spans/paragraphs) */
+
+
+.required {
+	color: red;
+}
+
+.error {
+	color: red;
+}
+
+.success {
+	color: green;
+	font-size: 20px;
+	text-align: center;
+}
+
+.returnError {
+	color: red;
+	font-size: 20px;
+}
+
+
+.tableTitle{
+
+	color: #555;
+	font-size: 20px;
+
+}
+
+#locationStatus{
+
+	color: green;
+
+}
+
+
+/* ID Styles */
+
+#userImg {
+
+	width: 380px;
+	color: #555;
+	float: right;
+	font-size: 24px;
+	border: 1px solid;
+	border-radius: 5px;
+	height: 400px;
+	margin-top: 10px;
+	padding-left: 20px;
+
+}
+
+/* Position the default user image in centre of its div*/
+
+#userImg img {
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+#querySuccess{
+
+	color: green;
+	font-size: 24px;
+	text-align: center;
+	margin-left: 30px;
+
+}
+
+#loginLink {
+	font-size: 24px;
+}
+
+/* Base form styling - all forms have this as a minimum */
+
+form {
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+	border: 1px solid #555;
+	border-radius: 5px;	
+	color: #555;
+
+}
+
+/* Input Form Styling*/
+
+.inputForm {
+	
+	 padding-bottom: 60px;
+	
+}
+
+.inputForm h1 {
+
+	font-size: 25px;
+	padding: 0px 100px 10px 40px;
+	display: block;
+	border-bottom: 1px solid #555;
+
+}
+
+/* any labels that are a child to a div */
+
+.inputForm div>label {
+
+	font-weight: bold;
+	display: inline-block;	
+	width: 200px;
+	padding: 10px;
+	margin-left: 20%;
+
+}
+
+/* any spans that are child to a div */
+
+.inputForm div>span {
+	
+	display: inline-block;
+	text-align: left;
+}
+
+.inputForm p {
+	margin-left: 20%;
+}
+
+/* style the input fields for password, text and email input types, make them bigger with rounded corners */
+
+.inputForm input[type="password"], input[type="text"], input[type="email"] {
+	width: 250px;
+	border: 1px solid #555;
+	border-radius: 4px;
+	height: 25px;
+
+}
+
+/* style the inputform select elements */
+
+.inputForm select {
+	border: 1px solid #555;
+	border-radius: 4px;
+	height: 25px;
+
+}
+
+/*  style input form radio buttons */
+
+.inputForm input[type="radio"] {
+
+	margin-left: 25%;
+
+}
+
+.inputForm img {
+
+	margin-left: 10px;
+
+}
+
+/* Search Form Styling */
+
+.searchForm {
+	
+	 padding-bottom: 50px;
+	
+}
+
+.searchForm h1 {
+
+	font-size: 25px;
+	padding: 0px 0px 10px 40px;
+	display: block;
+	border-bottom: 1px solid #555;
+
+}
+
+.searchForm div>label {
+
+	font-weight: bold;
+	display: inline-block;	
+	width: 200px;
+	padding: 5px;
+
+}
+
+.searchForm div>span {
+	
+	display: inline-block;
+	text-align: left;
+	margin-left: 30%;
+	margin-top: 5px;
+}
+
+.searchForm input[type="password"], input[type="text"] {
+	width: 250px;
+	border: 1px solid #555;
+	border-radius: 4px;
+	height: 25px;
+
+}
+
+.searchForm select {
+	border: 1px solid #555;
+	border-radius: 4px;
+	height: 25px;
+
+}
+
+.searchForm input[type="checkbox"] {
+
+	margin-left: 30%;
+
+}
+
+/* Login Form Styling */
+
+.loginForm {
+
+	width: 50%;
+
+}
+
+.loginForm h1 {
+
+	font-size: 25px;
+	padding: 0px 0px 10px 40px;
+	display: block;
+	border-bottom: 1px solid #555;
+
+}
+
+.loginForm div>label {
+
+	font-weight: bold;
+	display: inline-block;	
+	width: 80px;
+	padding: 5px 40px 10px;
+
+}
+
+.loginForm div>span {
+	
+	display: inline-block;
+	text-align: left;
+	margin-left: 30%;
+	margin-top: 5px;
+}
+
+.loginForm input[type="password"], input[type="text"] {
+	width: 250px;
+	border: 1px solid #555;
+	border-radius: 4px;
+	height: 25px;
+
+}
+
+.loginForm select {
+	border: 1px solid #555;
+	border-radius: 4px;
+	height: 25px;
+
+}
+
+.loginForm p {
+	margin-left: 20px;
+}
+
+/* Review Form Styling */
+
+.reviewForm {
+
+	width: 100%;
+	padding-bottom: 60px;
+
+}
+
+.reviewForm h1 {
+
+	font-size: 25px;
+	padding: 0px 0px 10px 40px;
+	display: block;
+	border-bottom: 1px solid #555;
+
+}
+
+.reviewForm div>label {
+
+	font-weight: bold;
+	display: inline-block;	
+	width: 150px;
+	padding: 5px 40px 10px;
+
+}
+
+.reviewForm div>span {
+	
+	display: inline-block;
+	text-align: left;
+	margin-left: 30%;
+	margin-top: 5px;
+}
+
+.reviewForm input[type="password"], input[type="text"] {
+	width: 250px;
+	border: 1px solid #555;
+	border-radius: 4px;
+	height: 25px;
+
+}
+
+.reviewForm select {
+	border: 1px solid #555;
+	border-radius: 4px;
+	height: 25px;
+
+}
+
+.reviewForm p {
+	margin-left: 20px;
+}
+
+/* Button Styling */
+
+.button {
+
+	background-color: white; 
+	color: #4CAF50;
+	font-size: 18px;
+	border-radius: 5px;
+	padding: 2px 4px;
+	box-shadow: none;
+	border: 2px solid #4CAF50;
+}
+
+/*  when user hovers over button invert text/background colours */
+
+.button:hover {
+
+	background-color: #4CAF50; 
+	color: white;
+
+}
+
+.clearButton {
+
+	background-color: white; 
+	color: #FFA500;
+	font-size: 18px;
+	border-radius: 5px;
+	padding: 2px 4px;
+	box-shadow: none;
+	border: 2px solid #FFA500;
+
+}
+
+.clearButton:hover {
+	
+	background-color: #FFA500;
+	color: white;
+
+}
+
+#loginButton {
+
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+
+}
+
+#searchButton {
+
+	float: right;
+	margin-right: 20px;
+
+}
+
+#reviewButton {
+
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+
+}
+
+#clearButton {
+
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+#regButton {
+
+	float: right;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+
+/* Other Styles */
+
+/* styling for the Google maps map frame*/
+
+#mapsFrame {
+
+	float: right;
+	margin-top: 10px;
+	border: 1px solid;
+	border-radius: 5px;
+}
+
+input[type="text"]:disabled, select:disabled {
+
+	background: LightPink;
+
+}
+
+
+
+
